@@ -1,6 +1,6 @@
 script_key="ngOmTBDYTyeALynVfWgYTrZgxxEnJPxB";
 getgenv().GAG2Config = {
-    FPS_CAP = 15,
+    FPS_CAP = 5,
     AUTO_UPDATE_RESTART = true,
 
     BUY_PET = {  -- ["Pet Name"] = Amount
@@ -30,7 +30,7 @@ getgenv().GAG2Config = {
         ["Tulip"] = 50,
         ["Tomato"] = 4,
         ["Apple"] = 4,
-        ["Bamboo"] = 200,
+        ["Bamboo"] = 100,
         ["Corn"] = 4,
         ["Cactus"] = 4,
         ["Pineapple"] = 4,
@@ -44,11 +44,11 @@ getgenv().GAG2Config = {
         ["Acorn"] = 50,
         ["Cherry"] = 50,
         ["Sunflower"] = 50,
-        ["Venus Fly Trap"] = 0,
+        ["Venus Fly Trap"] = 50,
         ["Pomegranate"] = 50,
-        ["Poison Apple"] = 0,
-        ["Moon Bloom"] = 0,
-        ["Dragon's Breath"] = 0,
+        ["Poison Apple"] = 50,
+        ["Moon Bloom"] = 50,
+        ["Dragon's Breath"] = 50,
     },
 
     BUY_SEED = {  -- ["Seed Name"] = Amount
@@ -80,42 +80,29 @@ getgenv().GAG2Config = {
     },
 
     COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },  -- Only collect fruit when have ANY mutation
-    FAVOURITE_FRUIT = {"Gold", "Rainbow"},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
+    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
 
     SELL_ALL_DELAY = 20,
     FOCUS_RAINBOW_GOLD_SEED = false,  -- set true if public server (instant collect), false for slightly slower collect
     EXPAND_PLOT = true,
-    BUY_GEAR = {"Common Sprinkler", "Common Watering Can", "Uncommon Sprinkler"},  -- ["Gear Name"] = Amount
+    BUY_GEAR = {},  -- ["Gear Name"] = Amount
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
-    USE_SPRINKLER = {"Common Sprinkler", "Common Watering Can", "Uncommon Sprinkler"},  -- "Sprinkler Name"
+    USE_SPRINKLER = {},  -- "Sprinkler Name"
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {"mrstealyourbrain68"},  -- "Username" (Randomized)
-    AUTO_MAIL_ITEM_NAME = {["Rainbow"] = 99
-            ["Gold"] = 99
-            ["Raccoon"] = 99
-            ["Black Dragon"] = 99
-            ["Dragon's Breath"] = 99
-            ["Ice Serpent"] = 99
-            ["Moon Bloom"] = 99
-            ["Monkey"] = 99
-            ["Unicorn"] = 99
-            ["Golden Dragonfly"] = 99
-            ["Poison Apple"] = 99
-            ["Pomegranate"] = 99
-            ["Poison Ivy"] = 99
-            ["Ghost Pepper"] = 99
-            ["Venus Fly Trap"] = 99},  -- ["Item Name"] = Amount
+    AUTO_MAIL_USERNAME = {},  -- "Username" (Randomized)
+    AUTO_MAIL_ITEM_NAME = {},  -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
     -- Discord
-    WEBHOOK_PET_NAME = {"Raccoon", "Black Dragon", "Unicorn", "Ice Serpent", "Golden Dragonfly"},
+    WEBHOOK_PET_NAME = {},
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1513953712438251631/XjlPr4fsc1JC6qbmvJhoxsf8hUoEA2Oqx_c9wNowdbdNUrlSwgYgFcwJzIq1tTaBcDol",
-    DISCORD_ID = "681228624275308623",
+    WEBHOOK_URL = "",
+    DISCORD_ID = "",
     WEBHOOK_NOTE = "",  -- Private Webhook
-    SHOW_PUBLIC_DISCORD_ID = false,
+    SHOW_PUBLIC_DISCORD_ID = true,
     SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
