@@ -83,7 +83,7 @@ getgenv().GAG2Config = {
     FAVOURITE_FRUIT = {"Gold", "Rainbow"},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
 
     SELL_ALL_DELAY = 20,
-    FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
+    FOCUS_RAINBOW_GOLD_SEED = false,  -- set true if public server (instant collect), false for slightly slower collect
     EXPAND_PLOT = true,
     BUY_GEAR = {"Common Sprinkler", "Common Watering Can", "Uncommon Sprinkler"},  -- ["Gear Name"] = Amount
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
